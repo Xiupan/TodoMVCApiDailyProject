@@ -10,6 +10,14 @@ app.get('/', function (req, res) {
 })
 
 // put routes here
+app.get('/api/todos', function(request, response){
+  console.log('api/todos poop');
+})
+
+app.get('api/todos/:id', function(request, response){
+  var id = request.params.id;
+  console.log('api/todos/id poop');
+})
 
 app.listen(3000, function () {
     console.log('TodoMVC API App is running!')
