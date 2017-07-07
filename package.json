@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nodemon -e js,mustache ./app.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
